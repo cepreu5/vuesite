@@ -1,12 +1,12 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import BillPage from '@/views/BillPage.vue'
-import Products from '@/views/Products.vue'
+import ProductsPage from '@/views/ProductsPage.vue'
 
 const routes = [
 	{
 		path: '/',
-		name: 'products',
-		component: Products
+		name: 'ProductsPage',
+		component: ProductsPage
 	},
     {
         path: '/billPage',
@@ -16,7 +16,7 @@ const routes = [
 ];
 
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHistory('/list-with-products/'),
 	routes,
 });
 
